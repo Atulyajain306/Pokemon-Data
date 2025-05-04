@@ -22,7 +22,7 @@ const PokemonCard = () => {
   }
 
   return (
-    <div className='flex gap-x-3 gap-y-2 pt-16 relative right-12 flex-wrap overflow-hidden pb-10 bg-[#2e2b2b]' id='cards'>
+    <div className='flex gap-x-3 gap-y-2 pt-16 relative left-9 flex-wrap overflow-hidden pb-10 bg-[#2e2b2b]' id='cards'>
       {Array.isArray(PokemonAll) && PokemonAll.map((pokemon) => (
         <div key={pokemon.id} className='w-52 h-72 bg-gray-400 relative cursor-pointer hover:bg-slate-400 m-2 rounded-lg flex flex-col items-center justify-center'>
           <img src={pokemon.image} alt={pokemon.name} className='w-44 h-44 object-contain rounded-xl border-neutral-700 border-2 mt-4'/>
